@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400;1,500;1,800&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+.mainbody{
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backvid{
+    z-index: -1;
+    position: absolute;
+    max-width:100% ;
+    min-height:100% ;
+}
+
+.frame{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    min-height: 50rem;
+    border-radius: 1rem;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.frame::before{
+    top: -50%;
+    left: -50%;
+    content: '';
+    position: absolute;
+    width: 38rem;
+    height: 41rem;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+/*.frame::after{
+    content: '';
+    position: absolute;
+    width: 38rem;
+    height: 41rem;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}  */  
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.hone{
+    padding: 1rem;
+    padding-bottom: 1rem;
+
+    margin-top: 3rem;
+    font-weight: 800;
+    color: aliceblue;
+}
+.lbl{
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.frame .plc1{
+    font-weight: 900;
+}
+.frame .labels{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    position: relative;
+}
+.frame input{
+    font-family: 'Roboto',sans-serif;
+    color: aliceblue;
+    padding: 1rem 1rem;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width:20rem;
+    min-height: 2rem;
+    background: transparent;
+    border: 0.1rem solid gold;
+    line-height: 0.1rem;
+    left: 5%;
+
+}
+.labels .mails{
+    margin-bottom: 4rem;
+}
+.frame .passwords{
+    margin: 1rem;
+}
+.frame .headings{
+    text-align: center;
+}
+button{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 2rem;
+    margin-left:2rem ;
+    border: 0.1rem solid gold;
+    border-radius: 0.8rem;
+    background: transparent;
+    
+}
+.mainbody{
+    position: relative;
+}
+#Videobg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.btn1{
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    color: aquamarine;
+    padding: 1rem;
+}
+/*Media Query*/
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:375px){
+    html{
+        font-size: 20.66%;
+    }
+}
+@media(max-width:390px){
+    html{
+        font-size: 21.49%;
+    }
+}
+@media screen and (max-width:998px) and (min-width: 390px){
+    html{
+        font-size: 55% , 21.49% ;
+
+    }
+}
+@media screen and (max-width:428px){
+    html{
+        font-size: 23.58717%;
+        
+    }
+}
+@media screen and (max-height:926px){
+    html{
+        font-size: 51.03206%;
+        
+    }
+}

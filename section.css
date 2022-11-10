@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainbody{
+    max-width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+.mainhead{
+    text-align: center;
+    max-width: 100%;
+    min-height: 50vh;
+    font-size: 15rem;
+    color: rgb(220, 32, 76);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:auto;
+    min-height: 70vh;
+    background:url(115549.jpg),
+     linear-gradient(
+        to right,
+        rgb(35, 34, 35),
+        rgb(83, 83, 89)
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 50%,
+        50% 100%,
+        0 50%
+    );/**co-ordinates dite hbe*/
+    background-size:cover;
+    background-attachment: fixed;
+}
+.list-type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:100%;
+    min-height:100vh;
+
+
+}
+@keyframes animate {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+    
+}
+.skillsets{
+    box-shadow: 0.4rem;
+    border-radius: 5rem;
+}
+.images1{
+    clip-path: circle();
+    max-width: 10% ;
+    height: auto;
+    animation: animate 6s linear ;
+    
+
+}
+.images2{
+    max-width: 10% ;
+    height: auto;
+    animation: animate 6s linear ;
+}
+.headingtext , .text{
+    
+    font-size: 4rem;
+    color: aliceblue;
+    font-weight: 500;
+    animation: animate 6s linear ;
+
+}
+.skillsets{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(73, 68, 68);
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+    height: auto;
+    animation: animate 6s linear ;
+}
+/*Media Query*/
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:375px){
+    html{
+        font-size: 20.66%;
+    }
+}
+@media(max-width:390px){
+    html{
+        font-size: 21.49%;
+    }
+}
+@media screen and (max-width:998px) and (min-width: 390px){
+    html{
+        font-size: 55% , 21.49% ;
+
+    }
+}
+@media screen and (max-width:428px){
+    html{
+        font-size: 23.58717%;
+        
+    }
+}
+@media screen and (max-height:926px){
+    html{
+        font-size: 51.03206%;
+        
+    }
+}
